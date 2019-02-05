@@ -1,20 +1,71 @@
+<!DOCTYPE html>
 <html>
-    <title>Yulia's Sketch</title>
-    <head>
-    <style>
-        h1{color:blue;}
-            p{color:red;}
-    
-    </style>
-    </head>
-    <body>
-    <h1>Hello World</h1>
-     <h2>Hello World</h2>
-     <h3>Hello World</h3>
-     <h4>Hello World</h4>
-     <h5>Hello World</h5>
-     <h6>Hello World</h6>
-    <p> This is a paragraph.My name is Yulia</p>
-    <iframe src="sketch.html"></iframe>
-    </body>
+	<head>
+		<meta charset="utf-8">
+		<style>
+			body {
+				background-color: #ffffff;
+				margin: 0;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<script src="http://threejsplaygnd.brangerbriz.net/js/three.min.js"></script>
+		<script src="http://threejsplaygnd.brangerbriz.net/js/Detector.js"></script>
+		
+		<script>
+
+			if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
+			
+			var camera, scene, renderer;
+			var geometry, material, mesh;
+
+			function setup() {
+
+				var W = window.innerWidth, H = window.innerHeight;
+				renderer = new THREE.WebGLRenderer();
+				renderer.setSize( W, H );
+				document.body.appendChild( renderer.domElement );
+
+				camera = new THREE.PerspectiveCamera( 50, W/H, 1, 10000 );
+				camera.position.z = 500;
+
+				scene = new THREE.Scene();
+				
+				
+				// paste your code from the geometryGUI here
+				geometry = new THREE.TorusGeometry(100, 70.02, 37, 15, 21.99);
+material = new THREE.MeshNormalMaterial({shading: THREE.FlatShading});
+mesh = new THREE.Mesh(geometry, material);
+mesh.position.y = 28.67;
+mesh.rotation.x = 2.91;
+mesh.rotation.y = 1.94;
+mesh.rotation.z = 3.97;
+scene.add(mesh);
+ 
+
+
+			}
+
+			function draw() {
+
+				requestAnimationFrame( draw );
+				
+				// experiment with code from the snippets menu here
+				mesh.rotation.x = Date.now() * 0.00052;	
+				mesh.rotation.y = Date.now() * 0.0009;	
+				mesh.rotation.z = Date.now() * 0.002;
+
+				renderer.render( scene, camera );
+
+			}
+
+			setup();
+			draw();
+
+		</script>
+		
+	</body>
 </html>
