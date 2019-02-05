@@ -187,10 +187,10 @@
         
         ///////////////////////////////////////////////////////////
         //add icosphere test from 3js playground
-    geometry = new THREE.TorusGeometry(132.57, 59.23, 40, 23, 31.42);
+   geometry = new THREE.SphereGeometry(100.21, 39.64, 45.31);
 material = new THREE.MeshNormalMaterial({shading: THREE.FlatShading});
 mesh = new THREE.Mesh(geometry, material);
-mesh.scale.x = mesh.scale.y = mesh.scale.z = 0.5;
+mesh.scale.x = mesh.scale.y = mesh.scale.z = 0.25;
         mesh.position.y	= 0.5 //position y equals how far away from target 
         arWorldRoot.add( mesh ); //instead of adding mesh to the scene right away we add only when the target is detected
         //end icosphere code
