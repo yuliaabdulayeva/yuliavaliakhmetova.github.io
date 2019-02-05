@@ -35,17 +35,15 @@
 				
 				
 				// paste your code from the geometryGUI here
-				geometry = new THREE.CubeGeometry(184.88, 200, 152.43);
-material = new THREE.MeshNormalMaterial({shading: THREE.SmoothShading});
+				geometry = new THREE.TorusGeometry(100, 70.02, 37, 15, 21.99);
+material = new THREE.MeshNormalMaterial({shading: THREE.FlatShading});
 mesh = new THREE.Mesh(geometry, material);
-mesh.position.y = 24.26;
-mesh.rotation.x = 3.97;
-mesh.rotation.y = 4.59;
-mesh.rotation.z = 3.26;
+mesh.position.y = 28.67;
+mesh.rotation.x = 2.91;
+mesh.rotation.y = 1.94;
+mesh.rotation.z = 3.97;
 scene.add(mesh);
-
-bg = document.body.style;
-bg.background = '#d97d7d';
+ 
 
 
 			}
