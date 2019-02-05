@@ -190,11 +190,7 @@
         geometry = new THREE.TorusGeometry(100, 70.02, 37, 15, 21.99);
        material = new THREE.MeshNormalMaterial({shading: THREE.FlatShading});
        mesh = new THREE.Mesh(geometry, material);
-        mesh.position.y = 28.67;
-       mesh.rotation.x = 2.91;
-         mesh.rotation.y = 1.94;
-       mesh.rotation.z = 3.97;
-     scene.add(mesh);
+     
         mesh.position.y	= 0.5 //position y equals how far away from target 
         arWorldRoot.add( mesh ); //instead of adding mesh to the scene right away we add only when the target is detected
         //end icosphere code
