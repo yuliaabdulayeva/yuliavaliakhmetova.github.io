@@ -1,0 +1,64 @@
+# MakeHuman exported MTL
+# www.makehuman.org
+
+
+newmtl DefaultSkin
+Kd 0.5842 0.4348 0.3336
+Ks 0.3 0.3 0.3
+d 1
+
+newmtl long01
+Kd 1 1 1
+Ks 0.04706 0.04706 0.04706
+d 0
+map_Kd textures/long01_diffuse.png
+map_D textures/long01_diffuse.png
+
+newmtl Eye_brown
+Kd 1 1 1
+Ks 1 1 1
+d 0
+map_Kd textures/brown_eye.png
+map_D textures/brown_eye.png
+
+newmtl eyebrow008
+Kd 1 1 1
+Ks 0 0 0
+d 0
+map_Kd textures/eyebrow008.png
+map_D textures/eyebrow008.png
+
+newmtl eylashes04
+Kd 1 1 1
+Ks 0 0 0
+d 0
+map_Kd textures/eyelashes04.png
+map_D textures/eyelashes04.png
+
+newmtl teethMaterial
+Kd 0.64 0.64 0.64
+Ks 0.8549 0.8549 0.8549
+d 0
+map_Kd textures/teeth.png
+map_D textures/teeth.png
+
+newmtl short_tail_camo_tee01
+Kd 1 1 1
+Ks 0.02727 0.035 0.01801
+d 0
+map_Kd textures/short_tail_camo_tee_diff.jpg
+map_D textures/short_tail_camo_tee_diff.jpg
+
+newmtl costume-leggings
+Kd 1 1 1
+Ks 0.3176 0.3176 0.3176
+d 0
+map_Kd textures/costume_leggings.png
+map_D textures/costume_leggings.png
+
+newmtl Shoes05
+Kd 1 1 1
+Ks 0.05098 0.04706 0.04706
+d 0
+map_Kd textures/shoes05_diffuse.png
+map_D textures/shoes05_diffuse.png
